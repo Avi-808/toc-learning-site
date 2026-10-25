@@ -2,7 +2,7 @@
 
 An open, beginner-friendly learning website for Theory of Computation (TOC). It is a static site built with plain HTML, CSS, and JavaScript; no build tools, server, account, or API key is required.
 
-The syllabus map follows the PCC303CDS Theory of Computations course outline for Savitribai Phule Pune University's 2025 pattern. It summarizes five units (40 teaching hours), course objectives and outcomes, case studies, and listed references. Original course materials remain attributed to the university; the map is a student-oriented summary.
+The syllabus map follows the PCC303CDS Theory of Computations course outline for Savitribai Phule Pune University's 2025 pattern. It summarizes five units (40 teaching hours), course objectives and outcomes, case studies, and listed references. The topic library now gives 69 syllabus-aligned entries a plain-language explanation, example, and practice prompt. Original course materials remain attributed to the university; the map and explanations are student-oriented study aids.
 
 ## Run locally
 
@@ -23,7 +23,7 @@ Then open `http://localhost:8000` from this directory.
 5. Turing machines
 6. Decidability and complexity
 
-The six study guides each include a plain-language explanation, a concrete example, a quick check, and a completion marker saved in the browser. The DFA playground simulates a machine for binary strings ending in `01`, showing its state path and decision.
+The six introductory chapters each include a plain-language explanation, a concrete example, a quick check, and a completion marker saved in the browser. The separate topic library covers each listed syllabus area in expandable lessons with examples and practice questions. The DFA playground simulates a machine for binary strings ending in `01`, showing its state path and decision.
 
 ## Host it publicly
 
