@@ -10,13 +10,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="syllabus.css">
   <script src="app.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to lesson</a>
   <header class="topbar">
     <a class="brand" href="#top" aria-label="TOC Learning home"><span class="brand-mark">T</span><span>TOC learning<span class="brand-dot">.</span></span></a>
-    <nav class="topnav" aria-label="Main navigation"><a href="#course">Course</a><a href="#playground">Playground</a><a href="#about">About</a></nav>
+    <nav class="topnav" aria-label="Main navigation"><a href="#syllabus">Syllabus</a><a href="#course">Lessons</a><a href="#playground">Playground</a><a href="#about">About</a></nav>
     <a class="github-link" href="https://github.com/Avi-808/toc-learning-site" target="_blank" rel="noreferrer">Open source <span aria-hidden="true">↗</span></a>
   </header>
 
@@ -48,6 +49,25 @@
         <div class="art-answer"><span class="answer-check">✓</span><span><b>Recognizes:</b> every binary string ending in <code>01</code></span></div>
       </div>
       <div class="hero-scribble" aria-hidden="true">theory, but make it click <span>↗</span></div>
+    </section>
+
+    <section class="syllabus-section" id="syllabus">
+      <div class="section-heading syllabus-heading"><div><div class="eyebrow">PCC303CDS · SPPU · 2025 PATTERN</div><h2>Your syllabus, mapped.</h2><p class="syllabus-lede">A study guide aligned to the Theory of Computations course outline you shared.</p></div><div class="syllabus-facts"><span><b>40</b> teaching hours</span><span><b>3</b> credits</span><span><b>30 + 70</b> marks</span></div></div>
+      <div class="syllabus-meta"><span><b>Prerequisite</b> Discrete Mathematics</span><span><b>Teaching scheme</b> 3 theory hours per week</span><span><b>Assessment</b> CCE 30 · End-semester 70</span></div>
+      <div class="syllabus-outcomes">
+        <div class="syllabus-list"><div class="eyebrow">COURSE OBJECTIVES</div><ol><li>Review mathematical foundations and computational machines.</li><li>Design DFAs and NFAs and convert between models.</li><li>Use regular expressions and prove when languages are not regular.</li><li>Design CFGs, PDAs, and Turing machines for languages.</li><li>Understand computability and introductory complexity.</li></ol></div>
+        <div class="syllabus-list outcomes-list"><div class="eyebrow">BY THE END, YOU CAN</div><ol><li>Apply logic and mathematics to finite automata and their variants.</li><li>Work with regular expressions, pumping lemma, and Myhill–Nerode.</li><li>Construct and simplify context-free grammars.</li><li>Model language problems with pushdown automata.</li><li>Build Turing machines and classify basic complexity problems.</li></ol></div>
+      </div>
+      <div class="eyebrow units-eyebrow">FIVE UNITS · 40 HOURS TOTAL</div>
+      <div class="unit-grid">
+        <details class="unit-card" open><summary><span class="unit-number">UNIT I · 08 HOURS</span><strong>Formal languages & finite automata</strong><span class="unit-chevron">＋</span></summary><div class="unit-content"><p>Sets, alphabets, strings, empty string, substrings, concatenation, languages and their operations; DFA, NFA and ε-NFA conversions; DFA minimization; Moore and Mealy machines and conversion between them.</p><div class="unit-case"><b>Case studies</b> Vending machine · Spell checker · ATM PIN validation</div></div></details>
+        <details class="unit-card"><summary><span class="unit-number">UNIT II · 06 HOURS</span><strong>Regular expressions & languages</strong><span class="unit-chevron">＋</span></summary><div class="unit-content"><p>RE operators, precedence and algebraic laws; Kleene’s theorem; RE↔automaton conversions and Arden’s theorem; pumping lemma; closure and decision properties; Myhill–Nerode theorem.</p><div class="unit-case"><b>Case studies</b> Variable-name validation · Matching a word · Email validation</div></div></details>
+        <details class="unit-card"><summary><span class="unit-number">UNIT III · 09 HOURS</span><strong>Context-free grammars & languages</strong><span class="unit-chevron">＋</span></summary><div class="unit-content"><p>CFGs, derivations and parse trees, ambiguity, grammar construction and simplification; Chomsky and Greibach normal forms; pumping lemma and closure properties for CFLs; Chomsky hierarchy and applications.</p><div class="unit-case"><b>Case studies</b> Arithmetic expressions · A simple programming language</div></div></details>
+        <details class="unit-card"><summary><span class="unit-number">UNIT IV · 09 HOURS</span><strong>Pushdown automata</strong><span class="unit-chevron">＋</span></summary><div class="unit-content"><p>Formal PDA definition; acceptance by final state or empty stack; nondeterministic PDA; equivalence of PDA and CFG; PDA and context-free languages; introduction to Post machines.</p><div class="unit-case"><b>Case studies</b> Top-down and bottom-up parsing · Syntax checking · XML/HTML tag validation</div></div></details>
+        <details class="unit-card"><summary><span class="unit-number">UNIT V · 08 HOURS</span><strong>Turing machines & computability</strong><span class="unit-chevron">＋</span></summary><div class="unit-content"><p>TM model, representations, instantaneous descriptions, transitions, deterministic TMs and construction; universal TM and Church–Turing thesis; halting, decidable and undecidable problems; reducibility, recursive enumerability, time and space, P, NP and NP-completeness.</p><div class="unit-case"><b>Case studies</b> TM language recognition · Comparing machine variants · Analyzing the halting problem</div></div></details>
+      </div>
+      <div class="resources-panel"><div><div class="eyebrow">LEARNING RESOURCES</div><h3>Go a little deeper.</h3><p>Books listed in the course outline and an official NPTEL course.</p><a class="text-link" href="https://nptel.ac.in/courses/106104148" target="_blank" rel="noreferrer">NPTEL · Theory of Computation, IIT Kanpur <span>↗</span></a></div><ul><li>Hopcroft, Motwani & Ullman · <i>Introduction to Automata Theory, Languages, and Computation</i></li><li>Michael Sipser · <i>Introduction to the Theory of Computation</i></li><li>Daniel Cohen · <i>Introduction to Computer Theory</i></li><li>Lewis & Papadimitriou · <i>Elements of the Theory of Computation</i></li><li>John C. Martin · <i>Introduction to Languages and the Theory of Computation</i></li><li>Mishra & Chandrasekaran · <i>Theory of Computer Science</i>; Vivek Kulkarni · <i>Theory of Computation</i></li></ul></div>
+      <p class="syllabus-credit">Course map based on the PCC303CDS Theory of Computations outline, Savitribai Phule Pune University, 2025 pattern. The interactive lessons below add explanations and practice activities.</p>
     </section>
 
     <section class="course-section" id="course">
