@@ -11,13 +11,15 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="syllabus.css">
+  <link rel="stylesheet" href="topic-library.css">
   <script src="app.js" defer></script>
+  <script src="topic-library.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to lesson</a>
   <header class="topbar">
     <a class="brand" href="#top" aria-label="TOC Learning home"><span class="brand-mark">T</span><span>TOC learning<span class="brand-dot">.</span></span></a>
-    <nav class="topnav" aria-label="Main navigation"><a href="#syllabus">Syllabus</a><a href="#course">Lessons</a><a href="#playground">Playground</a><a href="#about">About</a></nav>
+    <nav class="topnav" aria-label="Main navigation"><a href="#syllabus">Syllabus</a><a href="#topics">Topic library</a><a href="#course">Lessons</a><a href="#playground">Playground</a><a href="#about">About</a></nav>
     <a class="github-link" href="https://github.com/Avi-808/toc-learning-site" target="_blank" rel="noreferrer">Open source <span aria-hidden="true">↗</span></a>
   </header>
 
@@ -68,6 +70,12 @@
       </div>
       <div class="resources-panel"><div><div class="eyebrow">LEARNING RESOURCES</div><h3>Go a little deeper.</h3><p>Books listed in the course outline and an official NPTEL course.</p><a class="text-link" href="https://nptel.ac.in/courses/106104148" target="_blank" rel="noreferrer">NPTEL · Theory of Computation, IIT Kanpur <span>↗</span></a></div><ul><li>Hopcroft, Motwani & Ullman · <i>Introduction to Automata Theory, Languages, and Computation</i></li><li>Michael Sipser · <i>Introduction to the Theory of Computation</i></li><li>Daniel Cohen · <i>Introduction to Computer Theory</i></li><li>Lewis & Papadimitriou · <i>Elements of the Theory of Computation</i></li><li>John C. Martin · <i>Introduction to Languages and the Theory of Computation</i></li><li>Mishra & Chandrasekaran · <i>Theory of Computer Science</i>; Vivek Kulkarni · <i>Theory of Computation</i></li></ul></div>
       <p class="syllabus-credit">Course map based on the PCC303CDS Theory of Computations outline, Savitribai Phule Pune University, 2025 pattern. The interactive lessons below add explanations and practice activities.</p>
+    </section>
+
+    <section class="topic-library" id="topics">
+      <div class="topic-library-heading"><div><div class="eyebrow">THE FULL PCC303CDS STUDY GUIDE</div><h2>Every syllabus topic, explained.</h2><p>Open a topic for a plain-language explanation, a small example, and a question to practise. Work through a unit at your own pace.</p></div><div class="topic-count"><b id="topic-count">0</b><span>guided topics</span></div></div>
+      <div id="topic-units" class="topic-units"></div>
+      <p class="topic-note">These are learning explanations, not a substitute for your lecture notes, textbook proofs, or instructor’s conventions. Formal proofs can vary in notation.</p>
     </section>
 
     <section class="course-section" id="course">
