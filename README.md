@@ -23,7 +23,7 @@ Then open `http://localhost:8000` from this directory.
 5. Turing machines
 6. Decidability and complexity
 
-The six introductory chapters each include a plain-language explanation, a concrete example, a quick check, and a completion marker saved in the browser. The separate topic library covers each listed syllabus area in expandable lessons with examples and practice questions. The DFA playground simulates a machine for binary strings ending in `01`, showing its state path and decision.
+The six introductory chapters each include a plain-language explanation, a concrete example, a quick check, and a completion marker saved in the browser. The separate topic library covers each listed syllabus area in expandable lessons with examples and practice questions. The TOC Quest game offers 10-question rounds with explanations, streak bonuses, and a best score saved on the device. The DFA playground simulates a machine for binary strings ending in `01`, showing its state path and decision.
 
 ## Host it publicly
 
