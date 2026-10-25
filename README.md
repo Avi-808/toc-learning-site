@@ -2,7 +2,7 @@
 
 An open, beginner-friendly learning website for Theory of Computation (TOC). It is a static site built with plain HTML, CSS, and JavaScript; no build tools, server, account, or API key is required.
 
-The syllabus map follows the PCC303CDS Theory of Computations course outline for Savitribai Phule Pune University's 2025 pattern. It summarizes five units (40 teaching hours), course objectives and outcomes, case studies, and listed references. The topic library now gives 69 syllabus-aligned entries a plain-language explanation, example, and practice prompt. Original course materials remain attributed to the university; the map and explanations are student-oriented study aids.
+The syllabus map follows the PCC303CDS Theory of Computations course outline for Savitribai Phule Pune University's 2025 pattern. It summarizes five units (40 teaching hours), course objectives and outcomes, case studies, and listed references. The topic library gives 69 syllabus-aligned entries a plain-language explanation, a relevant automaton/regex/grammar/PDA/Turing-machine diagram, an example, and a practice prompt. Original course materials remain attributed to the university; the map and explanations are student-oriented study aids.
 
 ## Run locally
 
