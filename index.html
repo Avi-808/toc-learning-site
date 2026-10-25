@@ -13,14 +13,16 @@
   <link rel="stylesheet" href="syllabus.css">
   <link rel="stylesheet" href="topic-library.css">
   <link rel="stylesheet" href="topic-diagrams.css">
+  <link rel="stylesheet" href="quest.css">
   <script src="app.js" defer></script>
   <script src="topic-library.js" defer></script>
+  <script src="toc-quest.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to lesson</a>
   <header class="topbar">
     <a class="brand" href="#top" aria-label="TOC Learning home"><span class="brand-mark">T</span><span>TOC learning<span class="brand-dot">.</span></span></a>
-    <nav class="topnav" aria-label="Main navigation"><a href="#syllabus">Syllabus</a><a href="#topics">Topic library</a><a href="#course">Lessons</a><a href="#playground">Playground</a><a href="#about">About</a></nav>
+    <nav class="topnav" aria-label="Main navigation"><a href="#syllabus">Syllabus</a><a href="#topics">Topic library</a><a href="#game">Play TOC Quest</a><a href="#course">Lessons</a><a href="#playground">Playground</a><a href="#about">About</a></nav>
     <a class="github-link" href="https://github.com/Avi-808/toc-learning-site" target="_blank" rel="noreferrer">Open source <span aria-hidden="true">↗</span></a>
   </header>
 
@@ -77,6 +79,23 @@
       <div class="topic-library-heading"><div><div class="eyebrow">THE FULL PCC303CDS STUDY GUIDE</div><h2>Every syllabus topic, explained.</h2><p>Open a topic for a plain-language explanation, a small example, and a question to practise. Work through a unit at your own pace.</p></div><div class="topic-count"><b id="topic-count">0</b><span>guided topics</span></div></div>
       <div id="topic-units" class="topic-units"></div>
       <p class="topic-note">These are learning explanations, not a substitute for your lecture notes, textbook proofs, or instructor’s conventions. Formal proofs can vary in notation.</p>
+    </section>
+
+    <section class="quest-section" id="game">
+      <div class="quest-intro"><div class="eyebrow">A LITTLE PRACTICE ARCADE</div><h2>Play your way through TOC.</h2><p>Match problems to computational models, earn points, and learn from every answer. No timer and no penalty for getting one wrong.</p><div class="quest-badges"><span>10 questions per round</span><span>Best score saved on this device</span></div></div>
+      <div class="quest-card" id="quest-card">
+        <div class="quest-top"><span class="quest-tag">TOC QUEST · MODEL MATCH</span><span class="quest-best">BEST <b id="quest-best">0</b></span></div>
+        <div class="quest-start" id="quest-start"><div class="quest-orbit" aria-hidden="true"><span>q₀</span><i>→</i><span>q₁</span></div><h3>Which model fits?</h3><p>Read a challenge and choose the machine or idea that can handle it.</p><button class="quest-button" id="quest-begin">Start a round <span>→</span></button></div>
+        <div class="quest-play" id="quest-play" hidden>
+          <div class="quest-progress-row"><span id="quest-progress">QUESTION 1 OF 10</span><span class="quest-points"><b id="quest-score">0</b> points <i>·</i> <b id="quest-streak">0</b> streak</span></div>
+          <div class="quest-progress"><span id="quest-progress-bar"></span></div>
+          <div class="quest-prompt" id="quest-prompt"></div>
+          <div class="quest-options" id="quest-options"></div>
+          <div class="quest-feedback" id="quest-feedback" aria-live="polite"></div>
+          <button class="quest-button" id="quest-next" hidden>Next question <span>→</span></button>
+        </div>
+        <div class="quest-end" id="quest-end" hidden><div class="quest-end-mark">✦</div><h3>Round complete!</h3><p id="quest-summary"></p><button class="quest-button" id="quest-again">Play again <span>↻</span></button></div>
+      </div>
     </section>
 
     <section class="course-section" id="course">
